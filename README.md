@@ -1,4 +1,4 @@
-# matrix
+# matrix  [![Build Status](https://travis-ci.org/Yassermorteza/x-matrix.svg?branch=master)](https://travis-ci.org/Yassermorteza/x-matrix)
 
 # x-mocha-intro
 
