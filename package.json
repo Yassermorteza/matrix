@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "jshint src/*.js && mkdirp docs && cp src/index.html docs/",
+    "prebuild": "mkdirp docs && cp src/index.html docs/",
     "build": "browserify src/index.js -o docs/bundle.js",
     "postbuild": "uglifyjs docs/bundle.js -o docs/bundle.js",
     "test": "mocha"
