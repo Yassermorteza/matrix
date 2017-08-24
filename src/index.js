@@ -181,7 +181,14 @@ document.getElementById('step-8').innerHTML = renderHTMLTable(fillText);
 var renderTabelDom = require('./render-table-dom');
 
 var newmatrix= createMatrix(9,9);
+var table = document.getElementById("bonus");
+renderTabelDom(table,matrixFillsequence(newmatrix));
 
-renderTabelDom(document.getElementById("bonus"),matrixFillsequence(newmatrix));
-document.getElementById("bonus").setAttribute("border", "4");
-document.getElementById("bonus").setAttribute("style","background-color: #2f3f4f");
+var tds = document.querySelectorAll('td');
+
+tds.forEach(function(td){
+  td.style.border = '1px solid';
+});
+
+table.style.borderCollapse = 'collapse';
+table.style['background-color']= "#2f3f4f";

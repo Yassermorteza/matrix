@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "x-matrix",
+  "name": "array-matrix",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/lib.js",
   "scripts": {
-    "prebuild": "mkdirp docs && cp src/index.html docs/",
+    "prebuild": "jshint src/index.js && mkdirp docs && cp src/index.html docs/",
     "build": "browserify src/index.js -o docs/bundle.js",
     "postbuild": "uglifyjs docs/bundle.js -o docs/bundle.js",
     "test:dev": "mocha -w",
