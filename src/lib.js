@@ -1,5 +1,5 @@
 module.exports = {
-  createMatrix: require('./create-Matrix'),
+  createMatrix: require('./create-matrix'),
   matrixFillColNum: require('./matrix-fill-col-num'),
   matrixFillRowNum: require('./matrix-fill-row-num'),
   matrixFillSequence: require('./matrix-fill-sequence'),
